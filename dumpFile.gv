@@ -1,0 +1,25 @@
+digraph graf {
+listNode0x60300000efb0 [label="listNode[0x60300000efb0]\l{\l  type_ = KEY_WORD\l  value_ = func\l}\l"]
+listNode0x60300000efb0->listNode0x60300000ef50
+listNode0x60300000ef50 [label="listNode[0x60300000ef50]\l{\l  type_ = INDENTIFICATOR\l  value_ = main\l}\l"]
+listNode0x60300000ef50->listNode0x60300000eef0
+listNode0x60300000eef0 [label="listNode[0x60300000eef0]\l{\l  type_ = KEY_WORD\l  value_ = num\l}\l"]
+listNode0x60300000eef0->listNode0x60300000ee90
+listNode0x60300000ee90 [label="listNode[0x60300000ee90]\l{\l  type_ = INDENTIFICATOR\l  value_ = her\l}\l"]
+listNode0x60300000ee90->listNode0x60300000ee60
+listNode0x60300000ee60 [label="listNode[0x60300000ee60]\l{\l  type_ = OPERATOR\l  value_(type of symbol) = 4\l}\l"]
+listNode0x60300000ee60->listNode0x60300000ee30
+listNode0x60300000ee30 [label="listNode[0x60300000ee30]\l{\l  type_ = NUMBER\l  value_ = 10\l}\l"]
+listNode0x60300000ee30->listNode0x60300000ee00
+listNode0x60300000ee00 [label="listNode[0x60300000ee00]\l{\l  type_ = OPERATOR\l  value_(type of symbol) = 0\l}\l"]
+listNode0x60300000ee00->listNode0x60300000edd0
+listNode0x60300000edd0 [label="listNode[0x60300000edd0]\l{\l  type_ = NUMBER\l  value_ = 1\l}\l"]
+listNode0x60300000edd0->listNode0x60300000eda0
+listNode0x60300000eda0 [label="listNode[0x60300000eda0]\l{\l  type_ = BRACKET\l  value_(type of symbol) = 7\l}\l"]
+listNode0x60300000eda0->listNode0x60300000ed70
+listNode0x60300000ed70 [label="listNode[0x60300000ed70]\l{\l  type_ = BRACKET\l  value_(type of symbol) = 8\l}\l"]
+listNode0x60300000ed70->listNode0x60300000ed10
+listNode0x60300000ed10 [label="listNode[0x60300000ed10]\l{\l  type_ = INDENTIFICATOR\l  value_ = return\l}\l"]
+listNode0x60300000ed10->listNode0x60300000ece0
+listNode0x60300000ece0 [label="listNode[0x60300000ece0]\l{\l  type_ = NUMBER\l  value_ = 0\l}\l"]
+}

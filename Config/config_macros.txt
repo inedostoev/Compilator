@@ -1,0 +1,46 @@
+//------------------------------------------------//
+#ifdef TYPES
+
+TYPE(OPERATOR)
+TYPE(KEY_WORD)
+TYPE(DELIMITER)
+TYPE(INDENTIFICATOR)
+TYPE(NUMBER)
+TYPE(BRACKET) 
+
+#endif
+
+//------------------------------------------------//
+
+#ifdef CHARS
+
+#ifdef OPERS
+CHAR(PLUS, '+')               
+CHAR(MINUS, '-')              
+CHAR(MUL, '*')                
+CHAR(DIV, '/')               
+CHAR(EQUAL, '=')          
+CHAR(MORE, '>')          
+CHAR(LESS, '<')  
+
+#endif
+
+#ifdef BRACKETS
+CHAR(BRACKET_LEFT, '(')       
+CHAR(BRACKET_RIGHT, ')')     
+
+#endif
+#endif
+//------------------------------------------------//
+#ifdef KEYWORDS
+
+KEYWORD(str)
+KEYWORD(num)
+KEYWORD(func)
+KEYWORD(output)
+KEYWORD(input)
+KEYWORD(mas)
+KEYWORD(round)
+
+#endif
+//------------------------------------------------//

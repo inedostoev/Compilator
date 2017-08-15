@@ -1,0 +1,4 @@
+func main
+num her = 10+ 1
+()
+return 0
