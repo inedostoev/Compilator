@@ -9,12 +9,11 @@ TYPE(NUMBER)
 TYPE(BRACKET) 
 
 #endif
-
 //------------------------------------------------//
-
 #ifdef CHARS
 
 #ifdef OPERS
+
 CHAR(PLUS, '+')               
 CHAR(MINUS, '-')              
 CHAR(MUL, '*')                
@@ -24,8 +23,8 @@ CHAR(MORE, '>')
 CHAR(LESS, '<')  
 
 #endif
-
 #ifdef BRACKETS
+
 CHAR(BRACKET_LEFT, '(')       
 CHAR(BRACKET_RIGHT, ')')     
 

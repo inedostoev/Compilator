@@ -115,9 +115,9 @@ Token* makeTokens::makeList() {
 }
 
 void makeTokens::dotDump(Token* root) {
-    FILE* ptrFile = fopen("dumpFile.gv", "w");
+    FILE* ptrFile = fopen("./Compiler/dump/dumpNode.gv", "w");
     if (ptrFile == NULL) {
-        printf("Error with dumpFile.gv\n");
+        printf("Error with dumpNode.gv\n");
         exit(1);
     }
     fprintf(ptrFile, "digraph graf {\n");
@@ -127,8 +127,8 @@ void makeTokens::dotDump(Token* root) {
     ptrFile = NULL;
 
     int i = 0;
-    i = system("dot dumpFile.gv -Tpng -o dumpFile.png");
-    i = system("xdot dumpFile.gv");
+    i = system("dot ./Compiler/dump/dumpNode.gv -Tpng -o ./Compiler/dump/dumpNode.png");
+    i = system("xdot ./Compiler/dump/dumpNode.gv");
 }
 
 void makeTokens::dotNodeDump(Token* root, FILE* stream) {

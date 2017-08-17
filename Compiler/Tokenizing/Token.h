@@ -8,25 +8,25 @@
 union VALUE {
     int         number;
     char*       identifier;
-    SYMBOL      value;
+    SYMBOL      symbol;
 };
 
 class Token
 {
 public:
-    Token(TYPE type, int number);
-    Token(TYPE type, char* str);
-    Token(TYPE type, SYMBOL character);
-    ~Token();
+                Token(TYPE type, int number);
+                Token(TYPE type, char* str);
+                Token(TYPE type, SYMBOL character);
+                ~Token();
 
     Token       *next_;
     TYPE        type_;
     VALUE       value_;
 
-    Token& operator= (const Token&);
-    Token(const Token&);
+    Token&      operator= (const Token&);
+                Token(const Token&);
 private:
-    bool        str_flag;
+    bool        idFlag;
 };
 
 #endif

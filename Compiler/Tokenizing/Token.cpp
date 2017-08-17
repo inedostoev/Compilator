@@ -4,15 +4,15 @@
 Token::Token(TYPE type, int number):
     next_               (NULL),
     type_               (type),
-    str_flag            (false)
+    idFlag              (false)
 {
     value_.number = number;
 }
 
 Token::Token(TYPE type, char* str):
-    next_                   (NULL),
-    type_                   (type),
-    str_flag                (true)
+    next_               (NULL),
+    type_               (type),
+    idFlag              (true)
 {
     value_.identifier = str;
 }
@@ -20,16 +20,15 @@ Token::Token(TYPE type, char* str):
 Token::Token(TYPE type, SYMBOL character):
     next_               (NULL),
     type_               (type),
-    str_flag            (false)
+    idFlag              (false)
 {
-    value_.value = character;
+    value_.symbol = character;
 }
 
 Token::~Token() {
-    if(str_flag == true) {
+    if(idFlag == true) {
         free(value_.identifier);
     }
     delete next_;
     next_ = NULL;
-    //value_ = NULL;
 }
